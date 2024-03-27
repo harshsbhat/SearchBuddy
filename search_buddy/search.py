@@ -26,11 +26,3 @@ def main(keywords, array):
     similar_indices = similarity_search(keyword_embedding, array_embeddings)
     similar_array = [array[i] for i in similar_indices]
     return similar_array
-
-
-if __name__ == "__main__":
-    keywords = "machine learning"
-    array = ["Introduction to machine learning", "Deep learning for computer vision", "Natural language processing with Python", "Data visualization techniques", "Introduction to statistics"]
-    similar_array = main(keywords, array)
-    print("Array in the most similar order to the keywords:")
-    print(similar_array)
